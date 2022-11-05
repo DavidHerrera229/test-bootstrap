@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Email Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="styles.css"
+    <script src="https://kit.fontawesome.com/43e742a242.js" crossorigin="anonymous"></script>
+    
+    <style>
+      
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+<!------Main Container----------->
+        <div class="row no-gutters">
+            <!--Start of Column1 div-->
+            <div class="col-md-12 col-lg-3 pro-box">Profile + Menu
+                <div class="container">
+                    <!--Profile Box / Card BS-->
+                    <div class="procard" style="width: 18rem; margin-bottom: 20px;">
+                        <div class="card-body">
+                          <h5 class="card-title">Welcome to Snail Mail</h5>
+                          <p class="card-text">Username: David H.</p>
+                          <p class="card-text">Email: davidh@snailmail.com.</p>
+                          <a href="#" class="btn btn-primary">Sign Out</a>
+                        </div>
+                      </div>
+                    <!--End of Profile Box-->
+
+                    <!---Navbar BS Code-->
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Sent</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Attachments</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Folders</a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Contacts</a>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                    </div>
+                    <!---End of Navbar BS Code end-->
+                </div>
+<!--------------End of Container Div for Column 1-->
+            </div>
+<!----------End of Column 1 (profile + Nav)-->
+
+<!----------Start of Column 2 (inbox)-->
+            <div class="col-md-4 col-lg-3 in-box">Incoming Mail
+                <div class="container">
+                        <!--Search Bar BS-->
+                        <nav class="navbar navbar-light bg-light">
+                            <form class="form-inline">
+                            <input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </nav>
+                        <!--Search Bar BS end-->
+
+                    <!--Inbox List Group BS code-->
+                    <div class="incard" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Intinerary Flight 227 12/25/2022</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">American Airlines</h6>
+                            <p class="card-text">Email confirmation for your recent airfare purchase.</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Reservation (12/25/2022)</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Bookit.com</h6>
+                            <p class="card-text">Email confirmation for your hotel reservation.</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">3-Day Tourist Pass</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">American Tours</h6>
+                            <p class="card-text">Here is your mobile QR code pass to attend any tour on the program.</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">American Airlines</h6>
+                            <p class="card-text">Email confirmation for your recent airfare purchase.</p>
+                        </div>
+                    <div>
+                    <!--Inbox List Group BS end-->
+                </div>
+            </div>
+                
+<!----------Start of Col3 (Message View column)-------------------------------------------------------->
+            <div class="col-md-8 col-lg-6 view-box"> Message Viewer
+                <div class="container">
+                    <!--Form BS Code-->
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">From</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Subject</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect2">Message</label>
+                          <select multiple class="form-control" id="exampleFormControlSelect2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Comment Reply</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </form>
+                      <button type="button" class="btn btn-primary btn-sm">Submit</button>
+                    <!--Form BS Code End-->
+                </div>
+                <!--end of container div for column 2 -->
+            </div>
+            <!--end of column 2 div here -->
+
+
+        </div>
+        <!--End of Row Class Div-->
+    </div>
+    <!--End of Container-Fluid (main container)-->
+
+<!---Bootstrap JS Code-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+<!--Bootstrap JS Code -->
+</body>
+</html>
+
+
+
+
+           <!----------Start of Column 2 (inbox)-->
+           <div class="col-md-4 col-lg-3 in-box">Incoming Mail
+            <div class="container">
+                 <!--Search Bar BS-->
+                <nav class="navbar navbar-light bg-light">
+                    <form class="form-inline">
+                    <input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </nav>
+                <!--Search Bar BS end-->
+
+                <!--Inbox List Group BS code-->
+                <div class="incard" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Intinerary Flight 227 12/25/2022</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">American Airlines</h6>
+                        <p class="card-text">Email confirmation for your recent airfare purchase.</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Reservation (12/25/2022)</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Bookit.com</h6>
+                        <p class="card-text">Email confirmation for your hotel reservation.</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">3-Day Tourist Pass</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">American Tours</h6>
+                        <p class="card-text">Here is your mobile QR code pass to attend any tour on the program.</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">American Airlines</h6>
+                        <p class="card-text">Email confirmation for your recent airfare purchase.</p>
+                    </div>
+                <div><!--Inbox List Group BS end-->
+            </div><!---End of container -->
+        </div><!---End of 2nd column class-->

@@ -1,0 +1,151 @@
+/*-----------------(Notes on Media Sizes)----------------
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+-------------------------------------------------------*/
+body {
+    background-color: slateblue
+    ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*-----Container Div Style------*/
+.container {
+    background-color: lightsteelblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.row {
+  height: 920px;
+  background-color: lightslategray;
+  padding: 5px;
+}
+
+/* (Column structure) */
+/*---Profile Area Box/Colum---*/
+.pro-box {
+border: 2px solid white;
+}
+
+/*---Inbox Area Box/Colum---*/
+.in-box {
+border: 2px solid white;
+}
+/*---Message View Box/Colum---*/
+.view-box {
+border: 2px solid white;
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+
+/*-------Profile Info Box / Card "pro-card" media calls-----*/
+  .procard {
+    background-color: whitesmoke;
+        min-width: fit-content;
+  }
+
+  /* (Mobile) small = 576+ pixels */
+  @media (min-width: 576px){
+    .procard {
+        background-color: whitesmoke;
+        min-width: fit-content;
+    
+    }
+  }
+/* (Tablet) Medium = 768px */
+@media (min-width: 768px) {
+    .procard{
+        background-color: whitesmoke;
+        min-width: fit-content;
+        margin-right: 50px;
+        float: left;
+        
+    }
+}
+  /* (Desktop)lg = 992px  */
+  @media (min-width: 992px) {
+    .procard {
+        background-color: seashell;
+        min-width: fit-content;
+
+        float: none;
+    }
+  }
+
+/*------Inbox Messages Card "in-card" media calls-----*/
+  .incard {
+        
+  }
+
+/* (Mobile) small = 576+ pixels */
+@media (min-width: 576px){
+    .incard {
+        background-color: whitesmoke;
+        min-width: fit-;
+    
+    }
+  }
+/* (Tablet) Medium is 768px */
+@media (min-width: 768px) {
+    .incard{
+        background-color: whitesmoke;
+        min-width: fit-content;
+        margin-right: 50px;
+        float: left;
+        
+    }
+}
+  /* (Desktop)lg is 992px */
+  @media (min-width: 992px) {
+    .incard {
+        background-color: whitesmoke;
+        min-width: fit-content;
+    }
+  }
+
+  /*------ col1.(Nav Menu) Nav Pills Box ----*/
+  #v-pills-tab {
+    background-color: whitesmoke;
+  }
+
+@media (min-width: 576px){
+        #v-pills-tab{
+          min-width: fit-content;
+        }   
+}
+
+  @media (min-width: 768px){
+    #v-pills-tab{
+        background-color: whitesmoke;
+        min-width: fit-content;
+    }
+  }
+
+  @media (min-width: 992px){
+    #v-pills-tab{
+        background-color: whitesmoke;
+        min-width: fit-content;
+    }
+  }
