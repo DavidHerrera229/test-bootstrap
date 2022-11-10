@@ -14,138 +14,198 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 -------------------------------------------------------*/
+
 body {
-    background-color: slateblue
-    ;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  background-color: darkblue;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-/*-----Container Div Style------*/
+/*-----Main Container Div Style------*/
 .container {
-    background-color: lightsteelblue;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  background-color: lightsteelblue;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .row {
   height: 920px;
-  background-color: lightslategray;
+  background-color: slateblue;
   padding: 5px;
 }
+/*-----End Main Container Div Style------*/
 
-/* (Column structure) */
-/*---Profile Area Box/Colum---*/
+/*---(Column structure)------------------------------*/
+/*---Profile Area Box/Colum1---*/
 .pro-box {
-border: 2px solid white;
-}
-
-/*---Inbox Area Box/Colum---*/
-.in-box {
-border: 2px solid white;
-}
-/*---Message View Box/Colum---*/
-.view-box {
-border: 2px solid white;
-}
-.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-  
-    > .col,
-    > [class*="col-"] {
-      padding-right: 0;
-      padding-left: 0;
-    }
+  border: 5px solid slateblue;
   }
 
+  .in-box {
+   background-color: royalblue;
+   }
+   
+   /*---Message View Box/Colum3---*/
+   .view-box {
+   border: 5px solid slateblue;
+   background-color: slateblue;
+   }
+   
+   .no-gutters {
+       margin-right: 0;
+       margin-left: 0;   
+     }
 
-/*-------Profile Info Box / Card "pro-card" media calls-----*/
-  .procard {
-    background-color: whitesmoke;
-        min-width: fit-content;
-  }
-
+/* Media Queries------------------------------*/
   /* (Mobile) small = 576+ pixels */
-  @media (min-width: 576px){
-    .procard {
-        background-color: whitesmoke;
-        min-width: fit-content;
-    
+  @media (max-width: 576px){
+    .incard {
+      background-color: whitesmoke;
+      min-width: 100%;
+    }
+  
+    #v-pills-tab{
+      display: none;
+      /*min-width: fit-content;*/
+    } 
+  
+    .img-fluid {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 100px;
+    }
+  
+    .button {
+      display: none;
+    }
+  
+    .btn-group {
+      width: 100%;
     }
   }
-/* (Tablet) Medium = 768px */
-@media (min-width: 768px) {
-    .procard{
-        background-color: whitesmoke;
-        min-width: fit-content;
-        margin-right: 50px;
-        float: left;
-        
-    }
-}
-  /* (Desktop)lg = 992px  */
-  @media (min-width: 992px) {
-    .procard {
-        background-color: seashell;
-        min-width: fit-content;
 
-        float: none;
-    }
-  }
-
-/*------Inbox Messages Card "in-card" media calls-----*/
+  /* (Tablet) Medium = 768px -------------------*/
+@media (max-width: 768px) {
   .incard {
-        
-  }
-
-/* (Mobile) small = 576+ pixels */
-@media (min-width: 576px){
-    .incard {
-        background-color: whitesmoke;
-        min-width: fit-;
-    
-    }
-  }
-/* (Tablet) Medium is 768px */
-@media (min-width: 768px) {
-    .incard{
-        background-color: whitesmoke;
-        min-width: fit-content;
-        margin-right: 50px;
-        float: left;
-        
-    }
-}
-  /* (Desktop)lg is 992px */
-  @media (min-width: 992px) {
-    .incard {
-        background-color: whitesmoke;
-        min-width: fit-content;
-    }
-  }
-
-  /*------ col1.(Nav Menu) Nav Pills Box ----*/
-  #v-pills-tab {
     background-color: whitesmoke;
-  }
-
-@media (min-width: 576px){
-        #v-pills-tab{
-          min-width: fit-content;
-        }   
+    min-width: fit-content;
+    margin-right: 50px;
+    float: left;   
 }
 
-  @media (min-width: 768px){
-    #v-pills-tab{
-        background-color: whitesmoke;
-        min-width: fit-content;
-    }
+#v-pills-tab{
+  background-color: whitesmoke;
+  min-width: fit-content;
+}
+
+.img-fluid {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.btn-group {
+  width: 100%;
+}
+
+}
+
+
+/*(Desktop)lg = 992px-----------------------  */
+@media (max-width: 992px) {
+
+  .incard {
+    background-color: whitesmoke;
+    min-width: fit-content;
   }
 
-  @media (min-width: 992px){
-    #v-pills-tab{
-        background-color: whitesmoke;
-        min-width: fit-content;
-    }
+  #v-pills-tab{
+    background-color: whitesmoke;
+    min-width: fit-content;
   }
+
+  .img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-group {
+    width: 100%;
+  }
+
+}
+
+/* Column 1 ---Bootstrap Components ( Profile Card, Navbar, Badges, Image)--Default Mobile*/
+#v-pills-tab { /*---<----------Menu--*/
+  background-color: whitesmoke;
+  margin-top: 10px;
+}
+
+
+.badge-pill{ /*-----Badge Alert for "New Message" pill tab */
+justify-content: space-between;
+align-items: center;
+background-color: red;
+}
+  
+.img-fluid { /*-------------Image/Logo*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  width: 25%;
+}
+
+/* Column 2 ---Bootstrap components (Search Bar, Pages) Default Mobile*/
+/*--- Cards for the inbox messages ---*/
+.incard { 
+  min-width: 100%;
+}
+
+.card-body-active {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 10px;
+}
+
+/* --- Search Bar */
+.form-group {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+/*---Pages button---*/
+.pagination {
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/*-----Compose Button and Reply Button---*/
+.btn {
+  margin-top: 10px;
+  width: 100%;
+}
+/*------Search Button---*/
+.btn-s { 
+  width: 100%;
+}
+
+.btn-group {
+  width: 100%; 
+}
+
+/* Font Awesome Icons */
+.icons {
+  margin-left: 10px;
+}
+
+
+  
+
+
+

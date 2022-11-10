@@ -1,17 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Email Template</title>
+    <title>BS Email Temp</title>
+    <!---font awesome link-->
+    <script src="https://kit.fontawesome.com/43e742a242.js" crossorigin="anonymous"></script>
+    <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="styles.css"
-    <script src="https://kit.fontawesome.com/43e742a242.js" crossorigin="anonymous"></script>
-    
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="styles.css">
     <style>
-      
+
     </style>
 </head>
 
@@ -21,45 +24,91 @@
             <!---Start of Columns-------------------------------->
 
             <!---Start of Column 1-->
-            <div class="col-md-12 col-lg-3 pro-box">
+            <div class="col-md-12 col-lg-3 pro-box rounded">
                 <div class="container">
-                    <!--Profile Box / Card BS-->
-                    <div class="procard" style="width: 18rem; margin-bottom: 20px;">
-                        <div class="card-body">
-                          <h5 class="card-title">Welcome to Snail Mail</h5>
-                          <p class="card-text">Username: David H.</p>
-                          <p class="card-text">Email: davidh@snailmail.com.</p>
-                          <a href="#" class="btn btn-primary">Sign Out</a>
+                        <!--Profile Box / Card BS-->
+                    <div class="media">
+                            <div class="card">
+                                <div class="card-header">
+                                <i class="fa-solid fa-user"></i>  
+                                David [david@snailedit.com]
+                                </div>
+                                <div class="card-body">
+                                <h5 class="card-title">Hello & Welcome back</h5>
+                                <p class="card-text">The snail gang is ready to roll! Leaving a slimey trail in the process, so your never lost</p>
+                                <a href="#" class="btn btn-primary btn-sm">Sign Out?</a>
+                                </div>
+                            </div>
+                    </div>
+                    
+                        <!--Compose Mail btn-->
+                        <div class="button">
+                            <button type="button" class="btn btn-primary btn-md">Compose Mail<i class="icons fa-solid fa-pencil"></i></button>
                         </div>
-                    </div>
-                    <!---Navbar BS Code-->
+
+                        <!---Navbar BS Code-->
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Sent</a>
-                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Attachments</a>
-                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Folders</a>
-                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Contacts</a>
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true" >New Messages 
+                            <span class="badge badge-primary badge-pill">5</span>
+                            <i class="icons fa-regular fa-envelope"></i>
+                            <!--Badge(red)-->  
+                        </a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Sent
+                        <i class="icons fa-regular fa-envelope"></i></a>
+                        
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Attachments
+                        <i class="icons fa-solid fa-paperclip"></i></a>
+                        
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Folders
+                        <i class="icons fa-regular fa-folder"></i></a>
+                        
+                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Contacts
+                        <i class="icons fa-regular fa-address-card"></i></a>
                     </div>
+
                     <div class="tab-content" id="v-pills-tabContent">
+
                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+                        
                         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                        
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                        
                         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                        
                         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
                     </div>
                     <!---End of Navbar BS Code end-->
+                    
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary"><i class="icons fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-secondary"><i class="icons fa-regular fa-envelope"></i></button>
+                        <button type="button" class="btn btn-secondary"><i class="icons fa-solid fa-paperclip"></i></button>
+                        <button type="button" class="btn btn-secondary"><i class="icons fa-regular fa-folder"></i></button>
+                        <button type="button" class="btn btn-secondary"><i class="icons fa-regular fa-address-card"></i></button>
+                      </div>
+                    <!--Mobile Nav Bar-->
+                    <img src="./images/snail-logo.svg" class="img-fluid rounded-circle cen" alt="Responsive image">
+                
                 </div><!---End of container -->
             </div><!---End of Column 1-->
 
-
-            <!---Start of Column 2-->
-            <div class="col-md-4 col-lg-3 in-box">
+             <!---Start of Column 2-->
+             <div class="col-md-4 col-lg-3 in-box rounded">
                 <div class="container">
-                    <nav class="navbar navbar-light bg-light">
-                        <form class="form-inline">
-                        <input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </nav>
 
+                    <!-----Start of the search box -->
+                    <div class="form-group">
+                        <label>Inbox</label>
+                        <div class="wrapper">
+                            <input class="form-control form-control-sm" type="text" placeholder="search for emails here">
+                            <button type="button" class="btn-s btn-primary btn-sm">Search<i class="fa-solid fa-magnifying-glass icons"></i></button>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <!-----Start of the Inbox cards / messages -->
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Intinerary Flight 227 </h5>
@@ -85,10 +134,10 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Dog Food Subscription</h5>
+                        <div class="card-body-active">
+                            <h5 class="card-title-active">Dog Food Subscription</h5>
                             <h6 class="card-subtitle mb-2 text-muted">The Farmers Dog</h6>
-                            <p class="card-text">Lets setup your monthly Subscription for your dog Roscoe.</p>
+                            <p class="card-text">Lets setup your monthly Subscription for your dog Zoe.</p>
                         </div>
                     </div>
 
@@ -98,46 +147,75 @@
                             <h6 class="card-subtitle mb-2 text-muted">Amazon Prime</h6>
                             <p class="card-text">Your order of Android phone case has been shipped. Arrival on thursday 11/20.</p>
                         </div>
-                    </div>   
+                    </div>
 
-                </div>
+                    <!-----Start of the pages button/tab-->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                      </nav>
+
+                </div><!-----end of container for whole column 2-->
             </div><!---end of column 2-->
 
-
+            
             <!--Start of column 3-->
-            <div class="col-md-8 col-lg-6 view-box">
+            <div class="col-md-8 col-lg-6 view-box rounded">
                 <div class="container">
-                    <form>
-                        <div class="form-group">
-                          <label for="exampleFormControlInput1">From</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                   <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">From</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="contact@farmerdog.com">
+                        <small id="emailHelp" class="form-text text-muted"></small>
+                      </div>
+                      <label>Subject</label>
+                      <input class="form-control" type="text" placeholder="Monthly meal Plan for November 2022">
+                      <!-----Message View Card------>
+                      <div class="card">
+                        <div class="card-body">
+                          <p>Dear David,
+                            <br>
+                            <br>
+                            We got Zoe's monthly special dog meals on the way, please expect your shipment to arrive in 3-5 days. Expected arrival date is Nov 3rd (Wednesday).
+                            <br>
+                            <br>
+                            1 x week meal plan of Chicken, Brown Rice & Carrots.<br>
+                            1 x week meal plan of Beef, Egg, Carrots & Potatoes.<br>
+                            1 x week meal plan of Turkey Breast, Rice and Raisin blend.<br>
+                            1 x week meal plan of Farmers Dog special Dogs-giving Blend<br>
+                            <br>
+                            Please contact us if you have any further questions. (contact info will be listed below). 
+                            <br>
+                            Thank you for choosing us for your dog meal needs, we hope you are satisfied with our products and service.
+                            <br>
+                            <br>
+                            Please be sure to follow us on social media and tag us with a picture of your happy pet.
+                            <br>
+                            Take Care and Happy Holidays
+                            <br>
+                            <br>
+                            <b>The Farmer's Dog</b><br>
+                            help@thefarmersdog.com<br>
+                            (646)-780-7957
+                            <br><br>
+                            <q>Long Live Dogs</q>
+                          </p>
+                          <!---comment reply box BS code-->
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Comment / Reply</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Type Here...."></textarea>
+                          </div>
+                          <!---"Submit" Button for Column3 -->
+                          <button type="button" class="btn btn-primary btn-sm">Submit</button>
                         </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlSelect1">Subject</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
-                            <<option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>>
-                          </select>
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlSelect2">Message</label>
-                          <select multiple class="form-control" id="exampleFormControlSelect2">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                          </select>
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlTextarea1">Comment Reply</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                    </form>
-                    <button type="button" class="btn btn-primary btn-sm">Submit</button>
+                      </div>
+                   </form>
                 </div>
             </div><!---- End of column 3 --->
            
@@ -145,16 +223,10 @@
         </div> <!---End of class row-->   
     </div><!---main container--->
 
-
-
-
-
-                
-
-
-<!---Bootstrap JS Code-->
+    <!---Bootstrap JS Code-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 <!--Bootstrap JS Code -->
+   
 </body>
 </html>
